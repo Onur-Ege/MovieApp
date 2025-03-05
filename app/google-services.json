@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "211155898012",
+    "project_id": "jetmovie-aede6",
+    "storage_bucket": "jetmovie-aede6.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:211155898012:android:11a0af16a8dbbfd3086759",
+        "android_client_info": {
+          "package_name": "com.example.jetmovie"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDtnCPRNlViR2Riwd9yj8NGwwfUdy9sISQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
