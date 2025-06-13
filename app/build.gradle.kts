@@ -95,4 +95,5 @@ dependencies {
     implementation(libs.converter.gson)
     implementation (libs.firebase.auth.ktx)
     implementation (libs.play.services.auth)
+    implementation (libs.accompanist.swiperefresh)
 }
