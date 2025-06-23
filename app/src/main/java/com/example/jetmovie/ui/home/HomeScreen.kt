@@ -101,7 +101,7 @@ fun HomeScreen(
 
         Toast.makeText(
             context,
-            "Recommendations refreshed!",
+            "refreshed!",
             Toast.LENGTH_SHORT
         ).show()
     }
