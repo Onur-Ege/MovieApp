@@ -54,6 +54,7 @@ object NetworkModule {
         return OkHttpClient.Builder()
             .sslSocketFactory(sslContext.socketFactory, trustManager)
             .hostnameVerifier { _, _ -> true }
+            .addInterceptor(FirebaseAuthInterceptor())
             .build()
     }
 }

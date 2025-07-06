@@ -4,6 +4,7 @@ import android.content.Context
 import android.content.Intent
 import android.content.IntentSender
 import android.util.Log
+import com.example.jetmovie.di.Token
 import com.example.jetmovie.utils.K
 import com.google.android.gms.auth.api.identity.BeginSignInRequest
 import com.google.android.gms.auth.api.identity.BeginSignInRequest.GoogleIdTokenRequestOptions
@@ -44,6 +45,12 @@ class GoogleAuthUiClient(
         return try {
             val user = auth.signInWithCredential(googleCredentials).await().user
             Log.d("GoogleAuth", "User: ${user?.uid}")
+
+            val firebaseIdToken = user?.getIdToken(true)?.await()?.token
+            Log.d("FirebaseAuth", "Firebase ID Token: $firebaseIdToken")
+
+            Token.token = firebaseIdToken
+
             SignInResult(
                 data = user?.run {
                     UserData(
